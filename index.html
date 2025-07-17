@@ -613,6 +613,19 @@
         <button class="start-button" onclick="startGame()">スタート</button>
     </div>
 
+    <!-- 名前入力モーダル -->
+    <div id="name-input-modal">
+        <div class="name-input-container">
+            <h2 class="name-input-title">プレイヤー名入力</h2>
+            <p class="name-input-subtitle">あなたの名前を入力してください</p>
+            <input type="text" id="player-name-input" placeholder="名前を入力" maxlength="12" />
+            <div class="name-input-buttons">
+                <button class="name-input-btn secondary" onclick="skipNameInput()">スキップ</button>
+                <button class="name-input-btn primary" onclick="confirmName()">決定</button>
+            </div>
+        </div>
+    </div>
+
     <div id="game-container">
         <div id="character-container">
             <img id="character" class="character" src="" alt="Character">
