@@ -565,6 +565,14 @@
                 document.addEventListener('click', (e) => {
                     createClickParticle(e.clientX, e.clientY);
 
+                    // クリックSE再生
+                    if (!this.isMuted) {
+                        const clickSE = document.getElementById('click-se-player');
+                        clickSE.src = 'assets/audio/se/click.mp3';  // 必要に応じてファイル名を変更
+                        clickSE.currentTime = 0;
+                        clickSE.play().catch(err => console.log("クリックSE再生エラー:", err));
+                    }
+                    
                     if (!e.target.closest('#controls') && !e.target.closest('#start-screen')) {
                         if (this.isTyping) {
                             this.completeTyping();
