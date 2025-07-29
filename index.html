@@ -562,8 +562,9 @@
             }
 
             setupEventListeners() {
-                // クリックで次のシーンへ
                 document.addEventListener('click', (e) => {
+                    createClickParticle(e.clientX, e.clientY);
+
                     if (!e.target.closest('#controls') && !e.target.closest('#start-screen')) {
                         if (this.isTyping) {
                             this.completeTyping();
@@ -572,6 +573,8 @@
                         }
                     }
                 });
+            }
+
 
                 // キーボードでの操作
                 document.addEventListener('keydown', (e) => {
@@ -761,6 +764,19 @@
             if (window.game) {
                 window.game.toggleMute();
             }
+        }
+
+        function createClickParticle(x, y) {
+            const particle = document.createElement('div');
+            particle.classList.add('click-particle');
+            particle.style.left = `${x}px`;
+            particle.style.top = `${y}px`;
+
+            document.body.appendChild(particle);
+
+            setTimeout(() => {
+                particle.remove();
+            }, 600); // アニメーション終了後に削除
         }
 
         // ゲーム開始
