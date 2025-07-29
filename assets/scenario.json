@@ -271,5 +271,50 @@
       "bgm": "evening_theme.mp3",
       "se": ""
     }
+    {
+      "speaker": "主人公",
+      "text": "（今日は、なんだか不思議な一日だったな……）",
+      "character": "",
+      "position": "",
+      "background": "path_to_station.jpg",
+      "bgm": "evening_theme.mp3",
+      "se": ""
+    },
+  {
+    "speaker": "朔先輩",
+    "text": "……ねぇ、今日、朝も放課後も、偶然よく会ったね",
+    "character": "saku_vague_smile.png",
+    "position": "center",
+    "background": "path_to_station.jpg",
+    "bgm": "evening_theme.mp3",
+    "se": ""
+  },
+  {
+    "speaker": "主人公",
+    "text": "あはは、ですね。……でも、なんか嬉しかったです",
+    "character": "",
+    "position": "",
+    "background": "path_to_station.jpg",
+    "bgm": "evening_theme.mp3",
+    "se": ""
+  },
+  {
+    "speaker": "朔先輩",
+    "text": "ふふ。……なんか、変な感じだね。こうやって並んで歩くの",
+    "character": "saku_smile.png",
+    "position": "center",
+    "background": "path_to_station.jpg",
+    "bgm": "evening_theme.mp3",
+    "se": ""
+  },
+  {
+    "speaker": "ナレーター",
+    "text": "夕暮れの風が吹き抜けて、ふたりの影を長く伸ばしていた――",
+    "character": "",
+    "position": "",
+    "background": "path_to_station.jpg",
+    "bgm": "evening_theme.mp3",
+    "se": ""
+  }
   ]
 }
